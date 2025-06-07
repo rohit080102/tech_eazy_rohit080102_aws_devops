@@ -3,6 +3,13 @@
 set -e
 
 
+source ./.env
+
+# Export AWS variables so aws cli can pick them up
+export AWS_ACCESS_KEY_ID
+export AWS_SECRET_ACCESS_KEY
+export AWS_DEFAULT_REGION
+
 STAGE=$1
 if [[ -z "$STAGE" ]]; then
   echo "Usage: ./deploy.sh <Stage: Dev|Prod>"
