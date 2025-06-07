@@ -1,0 +1,7 @@
+STAGE="Dev"
+INSTANCE_TYPE="t2.micro"
+AMI_ID="ami-0a7d80731ae1b2435"
+KEY_NAME="my-key"
+SECURITY_GROUP_NAME="dev-sg"
+REPO_URL="https://github.com/techeazy-consulting/techeazy-devops"
+JAVA_VERSION="21"
